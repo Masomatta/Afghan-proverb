@@ -1,4 +1,5 @@
 import { MapPin } from "lucide-react";
+import {Link} from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -28,14 +29,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/create" className="hover">
-                Submit a Proverb
-              </a>
+             <Link to={"/create"} classname="hover">Submit a Proverb</Link>
             </li>
             <li>
-              <a href="/about" className="hover">
-                About Us
-              </a>
+            <Link to={"/about"} classname="hover">About us</Link>
             </li>
           </ul>
         </div>
