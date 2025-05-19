@@ -19,19 +19,15 @@ export default function Footer() {
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm text-white">
             <li>
-              <a href="/" className="hover">
-                Home
-              </a>
+              <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a href="/" className="hover">
-                All Proverbs
-              </a>
+              <Link to={"/"}>All Proverbs</Link>
             </li>
-            <li classname="hover">
+            <li>
              <Link to={"/create"}>Submit a Proverb</Link>
             </li>
-            <li classname="hover">
+            <li>
             <Link to={"/about"}>About us</Link>
             </li>
           </ul>
