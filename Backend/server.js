@@ -9,7 +9,7 @@ dotenv.config('.env')
 const app = express()
 
 app.use(cors({
-  origin: "https://afg-proverb.netlify.app/",
+  origin: "https://afg-proverb.netlify.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
