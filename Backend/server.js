@@ -8,17 +8,11 @@ dotenv.config('.env')
 
 const app = express()
 
-const allowedOrigins = process.env.CORS_ORIGINS.split(",");
-
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
+  origin: "https://afg-proverb.netlify.app/",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
 }));
 app.use(bodyParser.json())
 app.use('/api', router)
