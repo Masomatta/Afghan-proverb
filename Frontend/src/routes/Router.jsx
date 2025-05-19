@@ -1,8 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Navbar from "../components/Navbar";
 import CreateNew from "../pages/CreateNew";
 import EditPage from "../pages/EditPage";
+import About from "../pages/About";
 
 const Router = createBrowserRouter([
   {
@@ -22,7 +23,12 @@ const Router = createBrowserRouter([
         element: <CreateNew />,
       },
 
-      { path: "updateproverb/:id", element: <EditPage /> },
+      { path: "/updateproverb/:id",
+        element: <EditPage /> },
+      {
+        path:"/about", 
+        element:<About/>
+      }
     ],
   },
 ]);

@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import {v4 as uuidv4} from "uuid"
 
 //  path to the data(proverbs.json) file
-const filePath = "./proverbs.json";
+const filePath = "./data/proverbs.json";
 
 // Read from file
 const readData = () => JSON.parse(readFileSync(filePath));

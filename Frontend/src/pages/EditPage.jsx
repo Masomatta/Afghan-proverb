@@ -1,6 +1,8 @@
 import api from "../utils/axiosInstance.js";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ClipboardEdit, Edit3} from "lucide-react";
+import Footer from "../components/Footer.jsx";
 
 const EditPage = () => {
   const [textpashto, setTextpashto] = useState("");
@@ -39,27 +41,30 @@ const EditPage = () => {
       } else {
         setMessage("Failed to update");
       }
-    } 
-    catch (err) {
+    } catch (err) {
       setMessage("Failed to update");
     }
   };
 
   return (
-    <div className="flex justify-center mt-10">
+    <>
+    <div className=" min-h-screen flex justify-center items-center">
       <div className="card">
-        <h1>Edit Proverb</h1>
+        <h1 className="font-bold flex">
+          
+          <ClipboardEdit className="text-yellow-600" /> Edit Proverb
+        </h1>
         <form onSubmit={handleSubmit} className="flex flex-col">
           <label>Pashto Meaning</label>
           <input
-            className="input"
+            className="input text-right"
             value={textpashto}
             onChange={(e) => setTextpashto(e.target.value)}
           />
 
           <label>Dari Meaning</label>
           <input
-            className="input"
+            className="input text-right"
             value={textdari}
             onChange={(e) => setTextdari(e.target.value)}
           />
@@ -84,15 +89,18 @@ const EditPage = () => {
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           />
-
           {message && <p>{message}</p>}
+          <div className="flex">
+            <button className="btn w-full" type="submit">
+              Update Proverb <Edit3 size={20} className="mt-0.5 ml-1"/>
+            </button>
 
-          <button className="btn" type="submit">
-            Submit
-          </button>
+          </div>
         </form>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
