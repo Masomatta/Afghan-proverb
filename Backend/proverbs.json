@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "textPashto": "صبر تریو دی، خو مېوه یې خوږه ده.",
+    "textDari": "صبر تلخ است، ولی میوهاش شیرین است.",
+    "textEnglish": "Patience is bitter, but its fruit is sweet.",
+    "meaning": "Being patient is difficult, but it brings good results in the end.",
+    "category": "wisdom"
+  },
+  {
+    "id": 2,
+    "textPashto": "حتی پاچا هم د عقل په وړاندې سر ټیټوي.",
+    "textDari": "حتی شاه هم در برابر عقل سر فرود میآورد.",
+    "textEnglish": "Even a king must bow to wisdom.",
+    "meaning": "No matter how powerful you are, you should respect wisdom and knowledge.",
+    "category": "wisdom"
+  },
+  {
+    "id": 3,
+    "textPashto": "یوه ګل پسرلی نه کوي.",
+    "textDari": "یک گل بهار نمیشود.",
+    "textEnglish": "A single flower does not bring spring.",
+    "meaning": "One person alone cannot bring change; teamwork and unity are important.",
+    "category": "unity"
+  },
+  {
+    "id": 4,
+    "textPashto": "یو لاس چک نه شي وهلی.",
+    "textDari": "با یک دست صدا نمی آید.",
+    "textEnglish": "You can't clap with one hand.",
+    "meaning": "Cooperation is necessary; one person alone can't do everything.",
+    "category": "teamwork"
+  },
+  {
+    "id": 5,
+    "textPashto": "یو لاس چک نه شي وهلی.",
+    "textDari": "با یک دست صدا نمی آید.",
+    "textEnglish": "You can't clap with one hand.",
+    "meaning": "Cooperation is necessary; one person alone can't do everything.",
+    "category": "teamwork"
+  },
+  {
+    "id": 6,
+    "textPashto": "صبر تریو دی، خو مېوه یې خوږه ده.",
+    "textDari": "صبر تلخ است، ولی میوهاش شیرین است.",
+    "textEnglish": "Patience is bitter, but its fruit is sweet.",
+    "meaning": "Being patient is difficult, but it brings good results in the end.",
+    "category": "wisdom"
+  }
+]
