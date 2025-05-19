@@ -28,11 +28,11 @@ export default function Footer() {
                 All Proverbs
               </a>
             </li>
-            <li>
-             <Link to={"/create"} classname="hover">Submit a Proverb</Link>
+            <li classname="hover">
+             <Link to={"/create"}>Submit a Proverb</Link>
             </li>
-            <li>
-            <Link to={"/about"} classname="hover">About us</Link>
+            <li classname="hover">
+            <Link to={"/about"}>About us</Link>
             </li>
           </ul>
         </div>
